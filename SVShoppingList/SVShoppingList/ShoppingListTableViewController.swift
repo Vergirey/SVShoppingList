@@ -10,10 +10,25 @@ import UIKit
 
 class ShoppingListTableViewController: UITableViewController {
     
-    let shoppingList = [String]
+    var shoppingList = [""]
 
+    @IBOutlet weak var productNameTextField: UITextField!
+    @IBAction func addProduct(_ sender: Any) {
+        
+        let stringName = productNameTextField.text
+        shoppingList.append(stringName!)
+        UserDefaults.standard.set(shoppingList, forKey: "name")
+        productNameTextField.text = ""
+    }
+    
+    
     override func viewDidLoad() {
+        
+        shoppingList = UserDefaults.standard.object(forKey: "name") as! [String]
         super.viewDidLoad()
+        
+        productNameTextField.placeholder = ""
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,6 +39,10 @@ class ShoppingListTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
+        if shoppingList == UserDefaults.standard.object(forKey: "name") as! Array  {
+        
+        }
         // Dispose of any resources that can be recreated.
     }
 
@@ -36,18 +55,18 @@ class ShoppingListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return shoppingList.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        // Configure the cell...
-
+        cell.textLabel?.text = shoppingList[indexPath.row]
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -12,6 +12,7 @@
 		58F5609C1F0B922000670A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F5609B1F0B922000670A76 /* Assets.xcassets */; };
 		58F5609F1F0B922000670A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F5609D1F0B922000670A76 /* LaunchScreen.storyboard */; };
 		58F560A71F0B92C700670A76 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F560A61F0B92C700670A76 /* ShoppingListTableViewController.swift */; };
+		58F560A91F0D113400670A76 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F560A81F0D113400670A76 /* ProductTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		58F5609E1F0B922000670A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58F560A01F0B922000670A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58F560A61F0B92C700670A76 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		58F560A81F0D113400670A76 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				58F560941F0B922000670A76 /* AppDelegate.swift */,
 				58F560A61F0B92C700670A76 /* ShoppingListTableViewController.swift */,
+				58F560A81F0D113400670A76 /* ProductTableViewCell.swift */,
 				58F560981F0B922000670A76 /* Main.storyboard */,
 				58F5609B1F0B922000670A76 /* Assets.xcassets */,
 				58F5609D1F0B922000670A76 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				58F560951F0B922000670A76 /* AppDelegate.swift in Sources */,
 				58F560A71F0B92C700670A76 /* ShoppingListTableViewController.swift in Sources */,
+				58F560A91F0D113400670A76 /* ProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
