@@ -19,6 +19,7 @@ class ShoppingListTableViewController: UITableViewController {
         shoppingList.append(stringName!)
         UserDefaults.standard.set(shoppingList, forKey: "name")
         productNameTextField.text = ""
+        tableView.reloadData()
     }
     
     
@@ -40,9 +41,9 @@ class ShoppingListTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-        if shoppingList == UserDefaults.standard.object(forKey: "name") as! Array  {
-        
-        }
+//        if shoppingList == UserDefaults.standard.object(forKey: "name") as! Array  {
+//        
+//        }
         // Dispose of any resources that can be recreated.
     }
 
